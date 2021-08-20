@@ -13,9 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div style={{
-      maxHeight:"100vh",
       width:"100%"
-    }}>
+    }}
+    className="overflow-x-hidden"
+    >
         <img src="/assets/bg.png"
         className="absolute top-0 right-0 lg:h-full"
         data-aos="fade-left"
@@ -50,9 +51,11 @@ Full Stack Developer
             data-aos-duration="900"
            className="bg-white text-black font-bold px-8 py-4 rounded mt-5"
            >PORTFOLIO</button></section>
+           <br />
+           <Footer/>
         </section>
        
-<Footer/>
+
 
     </div>
     </>

@@ -15,12 +15,17 @@ const Skills = () => {
         "Desktop apps: PyQt, Flutter, Electron"
     ];
     return (
-        <div>
+        <div
+        style={{
+            maxWidth:"100%",
+            overflowX:"hidden",
+        }}
+        >
            <section
            data-aos="fade-down"
            data-aos-delay="1000"
            data-aos-duration="900"
-           className="mt-10 bg-black p-6 rounded-lg bg-opacity-30"
+           className="mt-10 bg-black p-6 rounded-lg bg-opacity-30  max-w-full"
            >
            <h2 className="font-bold text-yellow-300">SPECIALIZED IN</h2>
            <ul 
@@ -42,7 +47,7 @@ const Skills = () => {
            data-aos="fade-down"
            data-aos-delay="2000"
            data-aos-duration="900"
-           className="mt-4 bg-black p-6 rounded-lg bg-opacity-30"
+           className="mt-4 bg-black p-6 rounded-lg bg-opacity-30  max-w-full"
            >
            <h2 className="font-bold text-yellow-300">OTHER SKILLS</h2>
            <ul 
