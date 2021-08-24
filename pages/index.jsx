@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Footer from '../components/Footer'
+import Social from '../components/Social'
 import Skills from '../components/Skills'
+import HomeParticles from '../components/HomeParticles'
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div style={{
-      width:"100%"
+      width:"100%",
+      cursor: "move"
     }}
     className="overflow-x-hidden"
     >
@@ -22,9 +24,13 @@ export default function Home() {
         data-aos="fade-left"
         data-aos-duration="500"
         alt="" />
+
         <section
-         className="absolute top-0 left-0 p-16 text-white"
+         className="absolute top-0 z-20 left-0 text-white lg:mx-40 xl:mx-72 "
         >
+          <div className="m-16">
+
+          
  <h1 
         className="text-5xl font-bold"
         data-aos="fade-right"
@@ -40,21 +46,22 @@ export default function Home() {
           >
 Full Stack Developer
           </div>
+          <Social
+          className="flex mt-2"
+          iconSize="text-xl"
+          />
           <br />
           <Skills/>
-         <section
-         className="flex justify-center"
-         > 
-           <button
+          </div>
+          <button
             data-aos="zoom-in"
-            data-aos-delay="3000"
-            data-aos-duration="900"
-           className="bg-white text-black font-bold px-8 py-4 rounded mt-5"
-           >PORTFOLIO</button></section>
-           <br />
-           <Footer/>
+            data-aos-delay="1000"
+           className="absolute top-0 right-16 lg:right-0 lg:mr-16  z-30 bg-white text-black  px-4 py-1 rounded-b-lg"
+           >PORTFOLIOS</button>
         </section>
        
+        <HomeParticles/>
+        
 
 
     </div>
