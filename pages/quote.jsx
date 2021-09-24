@@ -1,7 +1,7 @@
 import  { useRouter } from 'next/router';
 import { useState } from 'react';
 import {IoArrowBackSharp} from 'react-icons/io5';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 var qs = require('qs');
 
 
