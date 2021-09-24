@@ -79,7 +79,7 @@ data-aos-duration="900"
 >
   <div>
   <button
-  className="rounded mr-2 px-3 py-2 border-yellow-400 hover:border-yellow-500 border-2
+  className="rounded mr-4 px-3 py-2 border-yellow-400 hover:border-yellow-500 border-2
    bg-yellow-400 hover:bg-yellow-500 text-black font-bold"
    onClick={()=>router.push('/portfolio')}
   >PORTFOLIO</button>
