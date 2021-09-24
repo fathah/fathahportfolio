@@ -5,7 +5,6 @@ import Social from '../components/Social'
 import Skills from '../components/Skills'
 import HomeParticles from '../components/HomeParticles'
 import { useRouter } from 'next/router'
-import Footer from '../components/Footer';
 
 export default function Home() {
   const router = useRouter();
@@ -90,9 +89,7 @@ data-aos-duration="900"
   </div>
 </section>
 <br />
-<footer className="lg:hidden">
-<Footer/>
-</footer>
+
 
         </section>
        
